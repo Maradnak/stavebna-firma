@@ -1,0 +1,26 @@
+
+/* Základ celej stránky */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #222222;
+}
+
+/* Hlavný nadpis */
+h1 {
+    color: black;
+    font-size: 42px;
+    text-align: center;
+}
+
+/* Vedľajší nadpis */
+h2 {
+    color: #b8860b;
+    text-align: center;
+}
+
+/* Odseky */
+p {
+    font-size: 18px;
+    text-align: center;
+}
