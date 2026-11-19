@@ -1,4 +1,90 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* NAVIGÁCIA */
+
+header {
+    background: #202020;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #c49a35;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c49a35;
+}
+
+/* ÚVODNÁ SEKCIA */
+
+.hero {
+    min-height: 500px;
+    background: linear-gradient(#0008, #0008),
+    url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #c49a35;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* PRODUKTY */
+
+.products {
+    padding: 75px 7%;
+    text-align: center;
+}
+
 .section-heading {
     margin-bottom: 45px;
 }
@@ -13,6 +99,12 @@
 .section-heading h2 {
     margin-top: 12px;
     font-size: 36px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .product {
@@ -108,4 +200,59 @@
 
 .product-button:hover {
     background: #a77c20;
+}
+
+/* VÝHODY A KONTAKT */
+
+.benefits,
+.contact {
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.benefits {
+    background: #f3f3f3;
+}
+
+.benefits p,
+.contact p {
+    margin: 15px 0;
+}
+
+.benefits h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* PÄTIČKA */
+
+footer {
+    background: #202020;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILNÁ VERZIA */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
