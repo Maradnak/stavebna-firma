@@ -24,3 +24,33 @@ p {
     font-size: 18px;
     text-align: center;
 }
+.hero {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #c49a35;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #b8860b;
+}
